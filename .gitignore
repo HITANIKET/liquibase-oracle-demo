@@ -1,0 +1,19 @@
+cat > .gitignore << 'EOF'
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Java
+*.class
+
+# Liquibase
+liquibase/lib/*.jar
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Jenkins
+workspace/
+EOF
