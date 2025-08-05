@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Liquibase Update') {
       steps {
-        withCredentials([usernamePassword(credentialsId: 'oracleyiptran', usernameVariable: 'DB_USER', passwordVariable: 'DB_PASS')]) {
+        withCredentials([usernamePassword(credentialsId: 'oracle-yiptran', usernameVariable: 'DB_USER', passwordVariable: 'DB_PASS')]) {
           bat """
             cd %WORKSPACE%\\liquibase
             liquibase ^
